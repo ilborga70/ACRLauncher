@@ -1,11 +1,33 @@
 ![ACRLauncher](https://github.com/user-attachments/assets/dd6469ec-30e1-4e86-ba09-492454094b7f)
 
-# ACRLauncher v0.0.2.5
+## 🛠️ Summary of Fixes and Improvements
 
-## 🛠️ Fixed argument validation error with error code 2 (file not found)
+### ✔️ Simplified Platform Menu
+- Removed unnecessary options.
+- The system now works in **Auto-Detect** mode.
+- If the game is not found, a popup appears prompting the user to download it, automatically opening the browser.
 
-A custom-built, feature-rich standalone launcher designed for the Early Access version of **Assetto Corsa Rally**.  
-This tool provides advanced configuration options, VR management, and troubleshooting utilities that are not available in the standard game launcher.
+---
+
+### 🚀 Advanced Non-Blocking Scan
+- Improved the **Find-Game** function.
+- The search now covers many more standard paths:
+  - Drives: `C:\`, `D:\`, `E:\`, `F:\`
+  - Common Steam / Epic directories
+- Added `[System.Windows.Forms.Application]::DoEvents()` to prevent the window from freezing or turning white during the scan.
+
+---
+
+### 📁 Corrected Paths
+- Updated the configuration/cache path:
+
+---
+
+### 🧩 CPU Priority Crash Fix
+- The crash (“process terminated”) occurred because:
+- The initial launcher process often closes immediately to start the actual game.
+- The launcher attempted to set CPU priority while the process was still initializing.
+- Added a **HasExited** check and dedicated error handling to prevent the script from crashing.
 
 ---
 
@@ -93,4 +115,5 @@ This tool provides advanced configuration options, VR management, and troublesho
 - Windows 10 / 11  
 - .NET Framework 4.5+ (included in most Windows systems)  
 - Assetto Corsa Rally (Early Access)
+
 
