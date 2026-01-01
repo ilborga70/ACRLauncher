@@ -2,6 +2,10 @@
 
 ## 🛠️ Summary of Fixes and Improvements
 
+### 🧩 CPU Priority
+- Fixed the incorrect functioning of the high priority of the acr.exe process.
+- Now, in the list of active Windows processes, you will see the acr.exe process using high CPU priority.
+
 ### ✔️ Simplified Platform Menu
 - Removed unnecessary options.
 - The system now works in **Auto-Detect** mode.
@@ -36,9 +40,6 @@
 ### 🎮 Game Management
 - **Multi-Platform Support**  
   Automatically detects game installations on Steam and Epic Games.
-
-- **Manual Path Selection**  
-  Allows browsing and selecting `acr.exe` if installed in a custom location.
 
 - **Dynamic UI**  
   Automatically extracts and displays the official game icon inside the launcher.
@@ -115,5 +116,6 @@
 - Windows 10 / 11  
 - .NET Framework 4.5+ (included in most Windows systems)  
 - Assetto Corsa Rally (Early Access)
+
 
 
