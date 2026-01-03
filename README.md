@@ -1,6 +1,24 @@
-![ACRLauncher](https://github.com/user-attachments/assets/dd6469ec-30e1-4e86-ba09-492454094b7f)
+![ACRLauncher](https://github.com/user-attachments/assets/277342fc-2d60-46ab-b36e-c5c77c45b60d)
 
-## 🛠️ Summary of Fixes and Improvements
+## What's New in v0.0.5.1
+
+### 🔄 Save Backup & Restore
+In the **Advanced** tab, there's now a panel to create `.zip` backups of your save files and restore them with a single click.
+
+### 🧠 CPU Affinity (No-SMT)
+In the **Play** tab, under Priority, a new checkbox appears: **"Affinity: Physical Cores Only"**.  
+This disables HyperThreading for the game (uses only even-numbered cores: 0, 2, 4...) to reduce micro‑stuttering.
+
+### 🚀 Game Booster
+In the **Advanced** tab, you can enable the Booster.  
+A text box lets you list processes to close automatically when launching the game (e.g., `chrome`, `teams`, `edge`).
+
+### 📝 Configuration Editor
+A **"Edit .INI"** button now opens the `GameUserSettings.ini` file directly in Notepad for quick manual tweaks.
+
+### 🔍 Update Checker (Preparation)
+On startup, the tool checks whether a newer version is available.  
+It's currently pointed to a placeholder link, but the update-checking logic is fully implemented.
 
 ### 🧩 CPU Priority
 - Fixed the incorrect functioning of the high priority of the acr.exe process.
@@ -116,6 +134,7 @@
 - Windows 10 / 11  
 - .NET Framework 4.5+ (included in most Windows systems)  
 - Assetto Corsa Rally (Early Access)
+
 
 
 
