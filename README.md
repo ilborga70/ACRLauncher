@@ -1,3 +1,5 @@
+![ACRLauncher_CPU](https://github.com/user-attachments/assets/8ebc6447-0ec4-4502-81ad-162913dbcb27)
+
 ![ACRLauncher](https://github.com/user-attachments/assets/277342fc-2d60-46ab-b36e-c5c77c45b60d)
 
 ## What's New in v0.0.5.2
